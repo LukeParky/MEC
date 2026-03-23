@@ -160,7 +160,7 @@ def print_results(results: EmissionResults):
     print_tier('Tier 2 Advanced', t2a.EF, t2a.CH4_kg, GE=t2a.GE, DMI=t2a.DMI)
     print(f'       NEm={results.NEm:.1f}  NEa={results.NEa:.1f}  NEl={results.NEl:.1f}  NEp={results.NEp:.1f} MJ/day')
     mpi = results.mpi_method
-    print_tier('MPI Method  ', mpi.EF, mpi.CH4, GE=mpi.GE, DMI=mpi.DMI)
+    print_tier('MPI Method  ', mpi.EF, mpi.CH4_kg, GE=mpi.GE, DMI=mpi.DMI)
     print(f'       ME maint={results.ME_maint:.1f}  ME lact={results.ME_lact:.1f}  ME preg={results.ME_preg:.1f} MJ/day')
 
 
